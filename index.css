@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", system-ui;
+}
+
+h1, h2{
+    font-family: "Young Serif", system-ui;
+}
+
+h2{
+    margin-bottom: 20px;
+    color: var(--Rose800);
+}
+
+p, ul, span{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    padding: 10px;
+    background-color: var(--Stone100);
+}
+
+span{
+    font-weight: 700;
+}
+
+.menu{
+    background-color: var(--White);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.prep{
+    margin: 20px auto;
+    max-width: 850px;
+    background-color: var(--Rose50);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.space{
+    margin: 20px 0;
+}
+
+ul, ol{
+    margin-left: 20px;
+}
+
+ul > li{
+    line-height: 2rem;
+}
+
+ol > li{
+    margin-bottom: 10px;
+}
+
+ol > li::marker{
+    color: var(--Rose800);
+    font-weight: 600;
+}
+
+img{
+    max-width:900px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width:600px;
+    height:300px;
+}
+
+.nutri{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--Stone900);
+    width: 500px;
+}
+
+.nutri> p{
+    color: var(--Rose800);
+    font-weight: 600;
+}
+
+
+.guide{
+    width: 500px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nutri, .guide {
+        width: 100%;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+
+    p, ul, span {
+        font-size: 0.9rem;
+    }
+
+    .menu, .prep {
+        padding: 15px;
+    }
+}
